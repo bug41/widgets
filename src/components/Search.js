@@ -18,7 +18,7 @@ const Search = () => {
                 }
             });
 
-            setResults(data.query.search);
+            setResults(data.query.search);  
         }
 
         if(term){
