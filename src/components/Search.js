@@ -6,7 +6,7 @@ const Search = () => {
     const [term, setTerm] = useState('');
     const [results, setResults] = useState([]);
 
-    useEffect(() => {        
+    useEffect(() => {
         const search = async () => {
             const {data} = await axios.get('https://en.wikipedia.org/w/api.php', {
                 params: {
@@ -34,10 +34,10 @@ const Search = () => {
                 <div className="title">
                     {result.title}
                 </div>
-                {result.snippet}                
+                <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>                
             </div>
         </div>
-            )
+        )
     });
 
     return (

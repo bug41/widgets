@@ -33,3 +33,8 @@ useEffect(() => {
         console.log(response.data);
     });
 }, [term]);
+
+
+
+### 내용중 html 태그 제거
+<span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
