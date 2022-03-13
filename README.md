@@ -4,7 +4,7 @@ React.Fragment 등록 해서 border 겹치는 부분 없애기
 
 onClick={() => onTitleClick(index)} , () 안적을경우 일괄 자동 실행됨 
 
-### 방법 1
+## 방법 1
 
 useEffect(() => {
     const search = async () => {
@@ -14,7 +14,7 @@ useEffect(() => {
 }, [term]);
 
 
-### 방법 2
+## 방법 2
 
 useEffect(() => {
     (async () => {
@@ -23,7 +23,7 @@ useEffect(() => {
 }, [term]);
 
 
-### 방법 3
+## 방법 3
 
 useEffect(() => {
     axios.get('aaaa')
